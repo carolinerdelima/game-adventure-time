@@ -1,7 +1,7 @@
 extends Node
 
 var score = 0
-@onready var hud_label: Label = $"/root/Node2D/HUD/Control/CoinLabel"
+@onready var hud_label: Label = $"/root/Node2D/HUD/CoinLabel"
 
 func add_point():
 	score += 1

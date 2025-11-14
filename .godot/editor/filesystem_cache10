@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1763144446
+::res://::1763154631
 icon.svg::CompressedTexture2D::1942663675789926328::1763140124::1763142280::1::::<><><>0<>0<>c57d0a6f67196b9f3a7148c020a27444<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1763142280
 FinnSprite.png::CompressedTexture2D::2113265755712078338::1763140124::1763142280::1::::<><><>0<>0<>268736ac07696f9ab008222317dc04da<>res://.godot/imported/FinnSprite.png-6fa6fe0748fa38401fbdac3f27d26170.ctex::
@@ -31,11 +31,11 @@ coin.tscn::PackedScene::6323336143830783087::1763140124::0::1::::<><><>0<>0<><>:
 killzone.tscn::PackedScene::1779533215168124538::1763140124::0::1::::<><><>0<>0<><>::uid://dpie8bau5voww::::res://scripts/killzone.gd
 node_2d.tscn::PackedScene::4200329589486870352::1763143169::0::1::::<><><>0<>0<><>::uid://4l0vk4cw26jg::::res://scenes/player.tscn<>uid://dcx1yrvsauwnd::::res://scripts/manager.gd<>uid://d4mdjtxs0kt4m::::res://assets/background_/sky_.png<>uid://bek2p52yqbsc1::::res://scripts/player.gd<>uid://bl0wci3i8twh2::::res://assets/midground_/summer_.png<>uid://bipmi33836w0x::::res://assets/foreground_/foreground_.png<>uid://bqqjub1hfnwan::::res://assets/objects_/staticObjects_.png<>uid://d1r00quse7a5o::::res://scenes/platform.tscn<>uid://cwdcomlraa5p0::::res://scenes/coin.tscn<>uid://0mawf1ujhl5k::::res://scenes/killzone.tscn<>uid://b8saxdj3kv7v4::::res://scenes/slime.tscn
 platform.tscn::PackedScene::9020829849248077706::1763140124::0::1::::<><><>0<>0<><>::uid://6kfmkkyg0bcr::::res://assets/midground_/spring_.png
-player.tscn::PackedScene::2059740617442958188::1763144419::0::1::::<><><>0<>0<><>::uid://5dxgcbywndwc::::res://assets/FinnSprite.png
-slime.tscn::PackedScene::4739852569340766831::1763144241::0::1::::<><><>0<>0<><>::uid://c054uixt3yf83::::res://scripts/slime.gd<>uid://c6qgxg4en0wko::::res://assets/enemies_/slime_purple.png<>uid://0mawf1ujhl5k::::res://scenes/killzone.tscn
+player.tscn::PackedScene::2059740617442958188::1763144899::0::1::::<><><>0<>0<><>::uid://5dxgcbywndwc::::res://assets/FinnSprite.png
+slime.tscn::PackedScene::4739852569340766831::1763144935::0::1::::<><><>0<>0<><>::uid://c054uixt3yf83::::res://scripts/slime.gd<>uid://c6qgxg4en0wko::::res://assets/enemies_/slime_purple.png<>uid://0mawf1ujhl5k::::res://scenes/killzone.tscn
 ::res://scripts/::1763140124
 coin.gd::GDScript::7958462377371537087::1763140124::0::1::::<>Area2D<><>0<>0<><>::
-killzone.gd::GDScript::8228911580325185602::1763140124::0::1::::<>Area2D<><>0<>0<><>::
+killzone.gd::GDScript::8228911580325185602::1763145626::0::1::::<>Area2D<><>0<>0<><>::
 manager.gd::GDScript::7348742853720883125::1763140124::0::1::::<>Node<><>0<>0<><>::
-player.gd::GDScript::2689487600021211630::1763144425::0::1::::<>CharacterBody2D<><>0<>0<><>::
-slime.gd::GDScript::6591290756246073778::1763144065::0::1::::<>Node2D<><>0<>0<><>::
+player.gd::GDScript::2689487600021211630::1763145560::0::1::::<>CharacterBody2D<><>0<>0<><>::
+slime.gd::GDScript::6591290756246073778::1763150463::0::1::::<>Node2D<><>0<>0<><>::
