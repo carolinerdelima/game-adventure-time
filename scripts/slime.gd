@@ -8,9 +8,12 @@ var direction = 1
 
 func _process(delta: float):
 	if ray_cast_2d_right.is_colliding():
-		direction = -1
-		animated_sprite_2d.flip_h = true
+			direction = -1
+			animated_sprite_2d.flip_h = true
 	if ray_cast_2d_2_left.is_colliding():
-		direction = 1
-		animated_sprite_2d.flip_h = false
+			direction = 1
+			animated_sprite_2d.flip_h = false
 	position.x += direction * SPEED * delta
+
+func take_damage() -> void:
+	queue_free()

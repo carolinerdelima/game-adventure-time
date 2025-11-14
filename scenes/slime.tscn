@@ -43,6 +43,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0l8pv"]
 size = Vector2(10, 13)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hurtbox"]
+size = Vector2(18, 16)
+
 [node name="Slime" type="Node2D"]
 script = ExtResource("1_n6pvg")
 
@@ -51,6 +54,15 @@ position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_v5wyi")
 autoplay = "default"
 frame_progress = 0.287291
+
+[node name="Hurtbox" type="Area2D" parent="."]
+position = Vector2(0, -6)
+collision_layer = 8
+collision_mask = 0
+groups = ["enemy_hurtbox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("RectangleShape2D_hurtbox")
 
 [node name="Killzone" parent="AnimatedSprite2D" instance=ExtResource("2_n6pvg")]
 
