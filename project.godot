@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Adventure Time Game"
-run/main_scene="uid://b03w2x0rrsanw"
-config/features=PackedStringArray("4.4", "Forward Plus")
+run/main_scene="uid://o5t81ceba8al"
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
