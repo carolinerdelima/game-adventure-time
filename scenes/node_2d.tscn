@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://b03w2x0rrsanw"]
+[gd_scene load_steps=30 format=3 uid="uid://b03w2x0rrsanw"]
 
 [ext_resource type="PackedScene" uid="uid://4l0vk4cw26jg" path="res://scenes/player.tscn" id="1_6e84v"]
 [ext_resource type="Script" uid="uid://dcx1yrvsauwnd" path="res://scripts/manager.gd" id="1_08kqv"]
@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://0mawf1ujhl5k" path="res://scenes/killzone.tscn" id="8_hh0fu"]
 [ext_resource type="PackedScene" uid="uid://b8saxdj3kv7v4" path="res://scenes/slime.tscn" id="10_dubn7"]
 [ext_resource type="FontFile" uid="uid://colsh3tvehrwd" path="res://assets/Minecraft.ttf" id="12_f6ptj"]
+[ext_resource type="Texture2D" uid="uid://bq1es1es32asq" path="res://assets/game_over.png" id="13_hsdmi"]
+[ext_resource type="Script" uid="uid://5qkelvql6jkt" path="res://scenes/game_over_layer.gd" id="13_ifa78"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hh0fu"]
 texture = ExtResource("3_04qyp")
@@ -873,3 +875,41 @@ theme_override_font_sizes/font_size = 30
 text = "Moedas: 0"
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
+
+[node name="GameOverLayer" type="CanvasLayer" parent="."]
+process_mode = 1
+visible = false
+script = ExtResource("13_ifa78")
+
+[node name="GameOverBanner" type="TextureRect" parent="GameOverLayer"]
+custom_minimum_size = Vector2(400, 250)
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -181.0
+offset_top = 160.0
+offset_right = 843.0
+offset_bottom = 536.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35, 0.35)
+mouse_filter = 2
+texture = ExtResource("13_hsdmi")
+stretch_mode = 3
+
+[node name="RetryButton" type="Button" parent="GameOverLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = 146.0
+offset_right = 76.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Tentar novamente"
+
+[connection signal="pressed" from="GameOverLayer/RetryButton" to="GameOverLayer" method="_on_RetryButton_pressed"]

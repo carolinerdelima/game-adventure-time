@@ -1,2 +1,7 @@
 res://scripts/menu.gd
 res://scenes/menu.tscn
+res://scenes/node_2d.tscn
+res://scripts/player.gd
+res://scripts/killzone.gd
+res://scenes/game_over_layer.gd
+res://scripts/manager.gd

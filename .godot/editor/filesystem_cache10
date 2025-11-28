@@ -2,8 +2,9 @@
 ::res://::1764351961
 default_bus_layout.tres::AudioBusLayout::8286358946530209995::1764347436::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1942663675789926328::1763140124::1764351774::1::::<><><>0<>0<>c57d0a6f67196b9f3a7148c020a27444<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1764351774
+::res://assets/::1764353775
 FinnSprite.png::CompressedTexture2D::2113265755712078338::1763140124::1764351774::1::::<><><>0<>0<>268736ac07696f9ab008222317dc04da<>res://.godot/imported/FinnSprite.png-6fa6fe0748fa38401fbdac3f27d26170.ctex::
+game_over.png::CompressedTexture2D::3563392388411165644::1764353775::1764354159::1::::<><><>0<>0<>fe4e41e4c1a26b832ef4054752540551<>res://.godot/imported/game_over.png-d3dc1210304ecaab7bc3f281cfa0d72f.ctex::
 Minecraft.ttf::FontFile::5779300241005316363::1764347436::1764351774::1::::<><><>0<>0<>c46895a78b95140dbbe498dd408fe30a<>res://.godot/imported/Minecraft.ttf-b8ba55381f56f287bfe65ce675c9164b.fontdata::
 ::res://assets/background_/::1764351774
 9369cea9d473826.png::CompressedTexture2D::6180847277768437827::1764347436::1764351774::1::::<><><>0<>0<>dbbdba28b026acdc3554a64a9a6891ee<>res://.godot/imported/9369cea9d473826.png-1480c21b98b7a0ce956cd6b01494c051.ctex::
@@ -26,7 +27,7 @@ winter_.png::CompressedTexture2D::1197378290955588035::1763140124::1764351774::1
 ::res://assets/music_/::1764347436
 ::res://assets/music_/music/::1764347436
 time_for_adventure.mp3::AudioStreamMP3::6123228276343461445::1764347436::1764347436::1::::<><><>0<>0<>f85a1e6f657771dc7b7ca73cb970e600<>res://.godot/imported/time_for_adventure.mp3-961e95eebd7a3e27f5cc3982c59a4817.mp3str::
-::res://assets/music_/sounds/::1764353059
+::res://assets/music_/sounds/::1764353297
 ataqueEspada.wav::AudioStreamWAV::4709727450890227226::1764353059::1764353297::1::::<><><>0<>0<>47028f0a0b33f3670599de5340592637<>res://.godot/imported/ataqueEspada.wav-9a5e33f5214d77a2e5b0a4526ebba1e8.sample::
 coin.wav::AudioStreamWAV::3544792295189898085::1764347436::1764347436::1::::<><><>0<>0<>632f15e17c714c0301bc64130d31ee18<>res://.godot/imported/coin.wav-7317ef85258e23b9ca7485c4807beab0.sample::
 explosion.wav::AudioStreamWAV::4542223553945478541::1764347436::1764347436::1::::<><><>0<>0<>66a87e6d86316c26de128bb833fd4595<>res://.godot/imported/explosion.wav-ff09a1df3ec25802729b4d434b9a9ce8.sample::
@@ -48,8 +49,9 @@ node_2d.tscn::PackedScene::4200329589486870352::1764347436::0::1::::<><><>0<>0<>
 platform.tscn::PackedScene::9020829849248077706::1763140124::0::1::::<><><>0<>0<><>::uid://6kfmkkyg0bcr::::res://assets/midground_/spring_.png
 player.tscn::PackedScene::2059740617442958188::1764353295::0::1::::<><><>0<>0<><>::uid://5dxgcbywndwc::::res://assets/FinnSprite.png<>uid://dq3yjbjuv7lv6::::res://assets/music_/sounds/jump.wav<>uid://b542ui4llap5r::::res://assets/music_/sounds/hurt.wav
 slime.tscn::PackedScene::4739852569340766831::1763144935::0::1::::<><><>0<>0<><>::uid://c054uixt3yf83::::res://scripts/slime.gd<>uid://c6qgxg4en0wko::::res://assets/enemies_/slime_purple.png<>uid://0mawf1ujhl5k::::res://scenes/killzone.tscn
-::res://scripts/::1764351963
+::res://scripts/::1764354064
 coin.gd::GDScript::7958462377371537087::1764347436::0::1::::<>Area2D<><>0<>0<><>::
+death_overlay.gd::GDScript::1738291891413703280::1764354085::0::1::::<>CanvasLayer<><>0<>0<><>::
 killzone.gd::GDScript::8228911580325185602::1764347436::0::1::::<>Area2D<><>0<>0<><>::
 manager.gd::GDScript::7348742853720883125::1764347436::0::1::::<>Node<><>0<>0<><>::
 menu.gd::GDScript::2621763808539583886::1764351963::0::1::::<>Node2D<><>0<>0<><>::
