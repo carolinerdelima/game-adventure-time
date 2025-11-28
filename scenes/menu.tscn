@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://o5t81ceba8al"]
+
+[ext_resource type="Script" uid="uid://bdmacjk0blhv7" path="res://scripts/menu.gd" id="1_yqeox"]
+[ext_resource type="FontFile" uid="uid://colsh3tvehrwd" path="res://assets/Minecraft.ttf" id="2_vjb58"]
+[ext_resource type="Texture2D" uid="uid://cucbwfjy8gqhv" path="res://assets/background_/9369cea9d473826.png" id="3_con2f"]
+
+[sub_resource type="Theme" id="Theme_con2f"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_yqeox")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(513, 290)
+texture = ExtResource("3_con2f")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 302.0
+offset_top = 136.0
+offset_right = 342.0
+offset_bottom = 176.0
+
+[node name="Start" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -160.0
+offset_top = 140.0
+offset_right = -17.0
+offset_bottom = 185.0
+theme_override_fonts/font = ExtResource("2_vjb58")
+theme_override_font_sizes/font_size = 30
+text = "Start"
+
+[node name="Quit" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -161.0
+offset_top = 205.0
+offset_right = -39.0
+offset_bottom = 212.0
+theme = SubResource("Theme_con2f")
+theme_override_fonts/font = ExtResource("2_vjb58")
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 37.0
+offset_top = 94.0
+offset_right = 1002.0
+offset_bottom = 174.0
+theme_override_colors/font_color = Color(0.0462, 0.26425, 0.42, 1)
+theme_override_colors/font_shadow_color = Color(0.243137, 0.419608, 0.780392, 1)
+theme_override_fonts/font = ExtResource("2_vjb58")
+theme_override_font_sizes/font_size = 80
+text = "ADVENTURE TIME GAME"
+
+[connection signal="pressed" from="Control/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Control/Quit" to="." method="_on_quit_pressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvx0r20hvcfmw"
-path="res://.godot/imported/desertDungeon_.png-62c42cd8a80b557496c374bf6b15ac08.ctex"
+uid="uid://cucbwfjy8gqhv"
+path="res://.godot/imported/9369cea9d473826.png-1480c21b98b7a0ce956cd6b01494c051.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background_/desertDungeon_.png"
-dest_files=["res://.godot/imported/desertDungeon_.png-62c42cd8a80b557496c374bf6b15ac08.ctex"]
+source_file="res://assets/background_/9369cea9d473826.png"
+dest_files=["res://.godot/imported/9369cea9d473826.png-1480c21b98b7a0ce956cd6b01494c051.ctex"]
 
 [params]
 

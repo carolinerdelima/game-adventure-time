@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cwdcomlraa5p0" path="res://scenes/coin.tscn" id="7_fws66"]
 [ext_resource type="PackedScene" uid="uid://0mawf1ujhl5k" path="res://scenes/killzone.tscn" id="8_hh0fu"]
 [ext_resource type="PackedScene" uid="uid://b8saxdj3kv7v4" path="res://scenes/slime.tscn" id="10_dubn7"]
+[ext_resource type="FontFile" uid="uid://colsh3tvehrwd" path="res://assets/Minecraft.ttf" id="12_f6ptj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hh0fu"]
 texture = ExtResource("3_04qyp")
@@ -723,9 +724,7 @@ _data = {
 &"move2": SubResource("Animation_x63s8")
 }
 
-[sub_resource type="SystemFont" id="SystemFont_08kqv"]
-
-[node name="Node2D" type="Node2D"]
+[node name="Game" type="Node2D"]
 
 [node name="Manager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -754,9 +753,6 @@ limit_smoothed = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(0, 98)
 shape = SubResource("WorldBoundaryShape2D_3m5ht")
-
-[node name="Coin" parent="." instance=ExtResource("7_fws66")]
-position = Vector2(138, -24)
 
 [node name="Coins" type="Node" parent="."]
 
@@ -820,6 +816,9 @@ position = Vector2(1160, -9)
 [node name="Coin20" parent="Coins" instance=ExtResource("7_fws66")]
 position = Vector2(1139, -9)
 
+[node name="Coin21" parent="Coins" instance=ExtResource("7_fws66")]
+position = Vector2(138, -24)
+
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Platform" parent="Platforms" instance=ExtResource("6_j7wrs")]
@@ -864,9 +863,13 @@ position = Vector2(1207, 0)
 layer = 0
 
 [node name="CoinLabel" type="Label" parent="HUD"]
-offset_right = 147.0
-offset_bottom = 42.0
-theme_override_colors/font_color = Color(1, 0.43207094, 0.41855443, 1)
-theme_override_fonts/font = SubResource("SystemFont_08kqv")
+offset_left = 38.0
+offset_top = 83.0
+offset_right = 185.0
+offset_bottom = 125.0
+theme_override_colors/font_color = Color(0.058, 0.0657333, 0.29, 1)
+theme_override_fonts/font = ExtResource("12_f6ptj")
 theme_override_font_sizes/font_size = 30
 text = "Moedas: 0"
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]

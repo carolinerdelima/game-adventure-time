@@ -9,8 +9,9 @@ func _on_body_entered(body: Node2D) -> void:
 			enemy.take_damage()
 		return
 	print("Você morreu")
+	
 	Engine.time_scale = 0.5
-	body.get_node("CollisionShape2D").queue_free()
+	body.death()
 	timer.start()
 
 func _find_enemy_owner() -> Node:
