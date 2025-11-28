@@ -4,6 +4,7 @@ const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
 
 @onready var sfx_jump: AudioStreamPlayer2D = $"sfx_ jump"
+@onready var sfx_attack: AudioStreamPlayer2D = $sfx_attack
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 @onready var attack_area: Area2D = $AnimatedSprite2D/AttackArea
 @onready var attack_shape: CollisionShape2D = $AnimatedSprite2D/AttackArea/CollisionShape2D
@@ -52,6 +53,7 @@ func _process(_delta: float) -> void:
 func start_attack() -> void:
 	is_attacking = true
 	anim.play("attack")
+	sfx_attack.play()
 	attack_shape.disabled = false
 	attack_area.monitoring = true
 

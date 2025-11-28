@@ -1,8 +1,9 @@
-[gd_scene load_steps=29 format=3 uid="uid://4l0vk4cw26jg"]
+[gd_scene load_steps=30 format=3 uid="uid://4l0vk4cw26jg"]
 
 [ext_resource type="Texture2D" uid="uid://5dxgcbywndwc" path="res://assets/FinnSprite.png" id="1_3vyb7"]
 [ext_resource type="AudioStream" uid="uid://dq3yjbjuv7lv6" path="res://assets/music_/sounds/jump.wav" id="2_g2els"]
 [ext_resource type="AudioStream" uid="uid://b542ui4llap5r" path="res://assets/music_/sounds/hurt.wav" id="3_qhqgy"]
+[ext_resource type="AudioStream" path="res://assets/music_/sounds/ataqueEspada.wav" id="4_attack"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3vyb7"]
 atlas = ExtResource("1_3vyb7")
@@ -214,3 +215,6 @@ stream = ExtResource("2_g2els")
 
 [node name="sfx_death" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_qhqgy")
+
+[node name="sfx_attack" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_attack")
