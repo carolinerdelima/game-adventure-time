@@ -21,7 +21,7 @@ func _resize_background() -> void:
     )
     var uniform_scale := max(scale_factor.x, scale_factor.y)
     background.scale = Vector2.ONE * uniform_scale
-    background.position = Vector2.ZERO
+    background.position = viewport_size * 0.5
 
 func _on_start_pressed() -> void:
     get_tree().change_scene_to_file("res://scenes/node_2d.tscn")

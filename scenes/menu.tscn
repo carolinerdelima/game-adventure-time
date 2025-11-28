@@ -11,7 +11,7 @@ script = ExtResource("1_yqeox")
 
 [node name="Background" type="Sprite2D" parent="."]
 texture = ExtResource("3_con2f")
-centered = false
+centered = true
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
